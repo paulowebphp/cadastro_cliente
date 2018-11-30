@@ -4,7 +4,7 @@ namespace app\controllers;
 use app\core\Controller;
 
 
-class IndexController extends Controller
+class HomeController extends Controller
 {
 
 	public function index()
@@ -15,7 +15,7 @@ class IndexController extends Controller
 	}#END index
 
 
-}#END IndexController
+}#END HomeController
 
 
  ?>
