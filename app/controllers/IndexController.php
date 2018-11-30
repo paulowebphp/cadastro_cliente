@@ -1,16 +1,16 @@
 <?php 
 
 namespace app\controllers;
+use app\core\Controller;
 
 
-class IndexController
+class IndexController extends Controller
 {
 
 	public function index()
 	{
-		echo "Controller Padrão";
-		echo "<br>";
-
+		
+		$this->load("template");
 
 	}#END index
 
