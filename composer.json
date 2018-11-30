@@ -1,0 +1,14 @@
+{
+    "name": "paulowebphp/estrutura_mvc",
+    "authors": [
+        {
+            "name": "paulowebphp",
+            "email": "paulowebphp@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    }
+}
