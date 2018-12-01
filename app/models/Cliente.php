@@ -35,6 +35,31 @@ class Cliente extends Model
 	}#END lista
 
 
+	public function inserir($nome, $email, $fone)
+	{
+
+		$sql = "
+
+		INSERT INTO cliente SET
+		nome = :nome, 
+		email = :email, 
+		fone = :fone;
+
+		";
+
+		$qry = $this->db->prepare($sql);
+
+		$qry->bindValue(":nome", $nome);
+		$qry->bindValue(":email", $email);
+		$qry->bindValue(":fone", $fone);
+
+		$qry->execute();
+
+		return $this->db->lastInsertId();
+
+	}#END inserir
+
+
 }#END class Cliente
 
 
