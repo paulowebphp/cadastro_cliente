@@ -9,16 +9,17 @@ class ClienteController extends Controller
 
 	public function index()
 	{
+		$dados["view"] = "cliente/Index";
 		
-		$this->load("template");
+		$this->load("template", $dados);
 
 	}#END index
 
 
 	public function novo()
 	{
-		
-		$this->load("template");
+		$dados["view"] = "cliente/Create";
+		$this->load("template", $dados);
 
 	}#END index
 

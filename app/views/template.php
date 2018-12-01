@@ -8,16 +8,13 @@
 
 <body>
 	<div class="conteudo">	
-		<div class="base-central">	
+		<div class="base-central">
+
 			<?php include "cabecalho.php"; ?>
 			
-			<?php include "v_home.php"; ?>
-			
-			<?php include "rodape.php"; ?>
-			
-			
-				
-			
+			<?php $this->load($view, $viewData); ?>
+
+			<?php include "rodape.php"; ?>			
 			
 		</div>	
 	</div>		
