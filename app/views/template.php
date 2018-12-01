@@ -7,56 +7,19 @@
 </head>
 
 <body>
-<div class="conteudo">	
-	<div class="base-central">	
-		<div class="base-topo">
-			<a href="index.php?link=1" class="logo"></a>
-			<div class="base-busca">
-				<form action="">
-					<input type="text" placeholder="Pesquisa">
-					<input type="submit" value="" class="but">
-				</form>				
-			</div>
-		</div>
-		
-		<nav class="menu">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="frm_cadastro.html">Cadastrar novo</a></li>
-		<li><a href="lst_contatos.html">Lista de contatos</a></li>
-		<li><a href="frm_cadastro.html">Editar</a></li>
-		<li><a href="frm_cadastro.html">Exluir</a></li>
-	</ul>
-</nav>		
-		
-		<div class="base-home">
-			<h1 class="titulo"><span class="cor">SEJA</span> BEM VINDO</h1>
-		<div class="base-colunas">	
-			<a href="frm_cadastro.html" class="col">
-				<i class="icone ico1"></i>
-				<span><b>NOVO</b> CADASTRO</span>
-			</a>	
+	<div class="conteudo">	
+		<div class="base-central">	
+			<?php include "cabecalho.php"; ?>
 			
-			<a href="lst_contatos.html" class="col">
-				<i class="icone ico2"></i>
-				<span><b>lista de</b> contatos</span>
-			</a>
+			<?php include "v_home.php"; ?>
 			
-			<a href="frm_cadastro.html" class="col">
-				<i class="icone ico3"></i>
-				<span><b>Editar</b> contatos</span>
-			</a>
+			<?php include "rodape.php"; ?>
 			
-			<a href="frm_cadastro.html" class="col">
-				<i class="icone ico4"></i>
-				<span><b>Excluir</b> contatos</span>
-			</a>
+			
+				
+			
+			
 		</div>	
-</div>	
-		
-		<div class="base-rodape">
-		<p>DIREITOS RESERVADOS MJAILTON.COM.BR</p>
-</div>	</div>		
-</div>		
+	</div>		
 </body>
 </html>
