@@ -13,8 +13,6 @@
 			<input name="txt_fone" value="" type="text" placeholder="Insira seu telefone">
 	
 			
-			<input type="hidden" name="acao" value="Cadastrar">
-			<input type="hidden" name="id" value="">
 			<input type="submit" value="Cadastrar" class="btn">
 			<input type="reset" name="Reset" id="button" value="Limpar" class="btn limpar">
 		</form>
