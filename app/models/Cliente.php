@@ -116,6 +116,26 @@ class Cliente extends Model
 
 
 
+	public function excluir($id_cliente)
+	{
+
+		$sql = "
+
+		DELETE FROM cliente
+		WHERE id_cliente = :id_cliente;
+
+		";
+
+		$qry = $this->db->prepare($sql);
+
+		$qry->bindValue(":id_cliente", $id_cliente);
+
+		$qry->execute();
+
+	}#END excluir
+
+
+
 }#END class Cliente
 
 

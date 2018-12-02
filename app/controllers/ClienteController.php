@@ -45,9 +45,24 @@ class ClienteController extends Controller
 
 
 
-	public function delete($id_cliente)
+	public function delete($id_cliente, $excluir = NULL)
 	{
+		$cliente = new Cliente();
+
+		if( $excluir == 'S' )
+		{
+			$cliente->excluir($id_cliente);
+			header("location: ".URL_BASE."cliente");
+			exit;
+
+		}#end if
+
+		$dados["cliente"] = $cliente->getCliente($id_cliente);
+
 		$dados["view"] = "cliente/Delete";
+
+
+
 		$this->load("template", $dados);
 
 	}#END delete
